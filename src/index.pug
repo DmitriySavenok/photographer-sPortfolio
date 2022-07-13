@@ -9,11 +9,20 @@ append vars
 block content
 	include pug/data
 
+	.preloader
+		p.preloader__text Загрузка
+		.preloader-box
+			span.circle
+			span.circle
+			span.circle
+			span.circle
+
 	.site
+
 		include pug/components/header
 
 		include pug/pages/home
 
-		include pug/components/footer
+		//- include pug/components/footer
 
 	//- include pug/components/analytics
