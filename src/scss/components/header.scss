@@ -5,9 +5,9 @@
 	transition: transform $easing-in $duration-normal;
 
 	&__grid {
+		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
 		height: 43px;
 	}
 
@@ -20,12 +20,48 @@
 		background-color: inherit;
 	}
 
+	&__title-block {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	&__logo {
 		color: $color-white;
 	}
 
 	&__page-title {
 		color: $color-gray-text;
+	}
+
+	&__social-icons-block {
+		position: absolute;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		overflow: hidden;
+	}
+
+	&__social-link {
+		display: flex;
+		align-items: center;
+		color: $color-white;
+		background-color: $color-main-black;
+	}
+
+	&__social-icon {
+		margin-right: 24px;
+	}
+
+	.insta-link {
+		z-index: 99;
+		transform: translateX(145.55px);
+	}
+
+	.vk-link {
+		z-index: 100;
+		transform: translateX(168.98px);
 	}
 }
 
