@@ -55,9 +55,6 @@ a {
 svg {
 	display: block;
 	flex: 0 0 auto;
-	width: 100%;
-	height: 100%;
-	fill: currentColor;
 }
 
 figure,
@@ -141,12 +138,24 @@ iframe {
 	max-width: 100%;
 }
 
+.container-custom {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
 .site {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh; // fallback
+	opacity: 0;
 	// stylelint-disable-next-line
 	min-height: var(--vh);
+	background-color: $background-color;
+}
+
+.loaded .site {
+	opacity: 1;
+	transition: $duration-normal;
 }
 
 /* stylelint-disable */

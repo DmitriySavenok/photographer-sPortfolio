@@ -5,11 +5,16 @@ $color-black: #000;
 $color-white: #fff;
 $color-gray: #eee;
 
+$color-main-black: #2d2d2d;
+$color-gray-text: #727272;
+$background-color: #f4f4f4;
+
 // FONTS
 // stylelint-disable-next-line
 $font-primary: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 // EASING TRANSITIONS
+$duration-fast: 0.2s;
 $duration-normal: 0.4s;
 $easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.com/#.25,.74,.22,1.1
 $easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06

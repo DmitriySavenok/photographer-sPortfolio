@@ -15,3 +15,13 @@ scrollToAnchor.init();
 
 header.init();
 lazyLoading.init();
+
+window.onload = function() {
+
+	setTimeout(function() {
+
+		document.body.classList.add('loaded')
+
+	}, 200)
+
+}
