@@ -43,14 +43,13 @@
 		align-items: center;
 		justify-content: flex-end;
 		overflow: hidden;
-		gap: 24px;
 	}
 
 	&__social-link {
 		display: flex;
 		align-items: center;
 		overflow: hidden;
-		max-width: 20px;
+		max-width: 43px;
 		box-sizing: border-box;
 		white-space: nowrap;
 		color: $color-white;
@@ -58,16 +57,22 @@
 	}
 
 	&__social-icon {
-		stroke-width: 1px;
+		fill: $color-white;
 	}
 }
 
+.header__social-link:not(:last-child) {
+	padding-right: 24px;
+}
+
 .phone-links {
-	max-width: 90px;
+	max-width: 95px;
 }
 
 .social-icons__content {
 	margin-left: 9px;
+	opacity: 0;
+	transition: opacity ease $duration-fast;
 }
 
 .phone-links__icon + .phone-links__icon {
@@ -105,5 +110,9 @@
 
 	.header__social-icons-block:hover .header__social-link:not(:hover) {
 		opacity: 0.3;
+	}
+
+	.header__social-link:hover .social-icons__content {
+		opacity: 1;
 	}
 }
