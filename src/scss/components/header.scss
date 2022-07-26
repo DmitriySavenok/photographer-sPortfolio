@@ -33,7 +33,12 @@
 	}
 
 	&__page-title {
+		margin: 0;
+		padding: 0;
+		font-weight: 400;
+		font-size: 1em;
 		color: $color-gray-text;
+		user-select: none;
 	}
 
 	&__social-icons-block {
@@ -54,6 +59,7 @@
 		white-space: nowrap;
 		color: $color-white;
 		background-color: $color-main-black;
+		transition: all ease $duration-normal;
 	}
 
 	&__social-icon {
