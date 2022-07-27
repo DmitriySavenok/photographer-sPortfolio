@@ -93,7 +93,25 @@
 	width: 16px;
 	height: 1px;
 	background-color: $color-white;
-	transition: width ease $duration-fast;
+	transition: all ease $duration-fast;
+}
+
+.button__pressed .button-lines {
+	width: 19px;
+	transition: all ease  $duration-normal;
+}
+
+.button__pressed .top-lines {
+	transform: rotate(45deg) translateY(8px);
+}
+
+.button__pressed .center-lines {
+	width: 0;
+	transition: width ease  $duration-fast;
+}
+
+.button__pressed .bottom-lines {
+	transform: rotate(-45deg) translateY(-8px);
 }
 
 .splitter {
@@ -108,6 +126,14 @@
 
 	.header__menu-button:hover .center-lines {
 		width: 16px;
+	}
+
+	.button__pressed:hover .button-lines {
+		width: 19px;
+	}
+
+	.button__pressed:hover .center-lines {
+		width: 0;
 	}
 
 	.header__social-link:hover {
