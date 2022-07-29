@@ -32,16 +32,30 @@
 	}
 }
 
+.navigation--opened {
+	left: 0;
+}
+
+.navigation__content,
+.copyright-block {
+	opacity: 0;
+	transform: translateX(-10px);
+}
+
+.navigation--opened .navigation__content,
+.navigation--opened .copyright-block {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all ease $duration-normal;
+	transition-delay: $duration-normal;
+}
+
 .navigation__list-item {
 	margin-bottom: 10px;
 }
 
 .navigation__list-item:last-child {
 	margin-bottom: 0;
-}
-
-.navigation--opened {
-	left: 0;
 }
 
 @media (hover: hover) and (pointer: fine) {
