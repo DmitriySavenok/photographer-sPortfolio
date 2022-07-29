@@ -18,11 +18,9 @@ block content
 			span.circle
 
 	.site
-
-		include pug/components/header
-
-		include pug/pages/home
-
-		//- include pug/components/footer
+		.site__grid
+			include pug/components/header
+			include pug/components/navigation
+			include pug/pages/home
 
 	//- include pug/components/analytics

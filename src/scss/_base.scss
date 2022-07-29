@@ -150,7 +150,18 @@ iframe {
 	opacity: 0;
 	// stylelint-disable-next-line
 	min-height: var(--vh);
-	background-color: $background-color;
+	background-color: $background-color-light;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 43px auto;
+	}
+}
+
+.splitter {
+	margin: 0 8px;
+	color: $color-gray-text;
 }
 
 .loaded .site {
