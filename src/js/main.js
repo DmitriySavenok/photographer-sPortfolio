@@ -1,5 +1,6 @@
 import './vendor';
 import './helpers';
+import './components/home';
 import './components/social';
 import {ieFix} from './vendor/ie-fix';
 import {vhFix} from './vendor/vh-fix';
@@ -13,13 +14,3 @@ actualYear();
 scrollToAnchor.init();
 
 lazyLoading.init();
-
-window.onload = function() {
-
-	setTimeout(function() {
-
-		document.body.classList.add('loaded')
-
-	}, 200)
-
-}

@@ -5,6 +5,8 @@ import $ from 'jquery';
 import objectFitImages from 'object-fit-images';
 // import objectFitVideos from 'object-fit-videos';
 
+import './vendor/isotope.pkgd.min';
+
 svg4everybody();
 objectFitImages();
 // objectFitVideos();
