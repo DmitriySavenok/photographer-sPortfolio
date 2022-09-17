@@ -1,0 +1,11 @@
+.portfolio {
+  height: calc(100vh - 43px);
+  padding-top: 20px;
+  background-color: $background-color-light;
+}
+
+.grid-item {
+  width: 20%;
+  height: auto;
+  padding: 5px;
+}
