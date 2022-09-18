@@ -2,14 +2,13 @@ extends ../layout.pug
 
 //- Переопредделение переменных шаблона layout.pug для страницы index.html
 block vars
-  - var headTitle  = 'Анастасия Конор | Портфолио'; //- Title
-  - var bodyClass = 'index-page' //- Классы для body
+  - var headTitle  = 'Анастасия Конор | Прайс'; //- Title
+  - var bodyClass = 'price-page' //- Классы для body
 
 block content
 
 block main
   main.main
-    include ../blocks/portfolio/portfolio
 
   //- Блок с подключением js файлов (при необходимости переопределяется)
 block scripts
