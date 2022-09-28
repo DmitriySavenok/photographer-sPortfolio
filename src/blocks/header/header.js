@@ -25,12 +25,11 @@ function navigationToggle() {
     let pageTitle = document.querySelector('.body');
     if(pageTitle.classList.contains('index-page')) {
       if(clickButton === undefined) {
+        clickButton = localStorage.getItem('filterFocus');
         document.querySelector('#button-all').click();
-        console.log('Пустая переменная')
       } else {
         document.querySelector(clickButton).click();
         console.log(clickButton)
-        console.log('Не пустая переменная')
       }
     }
   })
