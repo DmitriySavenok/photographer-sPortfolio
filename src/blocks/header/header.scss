@@ -154,3 +154,23 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 920px) {
+  .header__title-block {
+    position: initial;
+    transform: none;
+  }
+}
+
+@media (max-width: 584px) {
+  .header__logo,
+  .splitter.header__splitter {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title-block {
+    display: none;
+  }
+}

@@ -70,3 +70,15 @@
     transition: all ease $duration-normal;
   }
 }
+
+@media (max-width: 320px) {
+  .navigation {
+    left: -120%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navigation--opened {
+    left: 0;
+  }
+}

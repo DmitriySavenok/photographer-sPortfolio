@@ -13,5 +13,4 @@ window.onload = function() {
 
 	}, 200)
 
-
 }
