@@ -1,19 +1,27 @@
 function navigationFilter() {
   let filter = '*';
+  let filterFocus = localStorage.getItem('filterFocus');
+  console.log('Локальная перемнная хранит ' + filterFocus);
 
-  // Инициализация библиотеки для плиточного расположения фото на страниц портфолио
-  const elem = document.querySelector('.portfolio__grid');
-  const iso = new Isotope( elem, {
-    itemSelector: '.grid-item',
-    layoutMode: 'masonry',
-    percentPosition: true
-  });
+  if (filterFocus === undefined || filterFocus === null) {
+    localStorage.setItem('filterFocus', '#button-all');
+    clickButton = localStorage.getItem('filterFocus');
+    console.log('Переменная filterFocus в локальном хранилище не определена, устанавливается значение #button-all')
+  }
 
-  // Фильтр фотографий на странице портфолио
+  // Переменная хранит название страницы
   let pageTitle = document.querySelector('.body');
 
   // Если открыта страница с фотографиями запускаем скрипт
   if(pageTitle.classList.contains('index-page')) {
+
+    // Инициализация библиотеки для плиточного расположения фото на страниц портфолио
+    const elem = document.querySelector('.portfolio__grid');
+    const iso = new Isotope( elem, {
+      itemSelector: '.grid-item',
+      layoutMode: 'masonry',
+      percentPosition: true
+    });
 
     // Цикл находит все кнопки с классом .navigation__filter-btn
     document.querySelectorAll('.navigation__filter-btn').forEach(el => {
