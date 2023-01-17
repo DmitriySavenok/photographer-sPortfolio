@@ -1,0 +1,14 @@
+extends ../layout.pug
+
+//- Переопредделение переменных шаблона layout.pug для страницы index.html
+block vars
+  - var headTitle  = 'Анастасия Конор | Условия проведения съёмки'; //- Title
+  - var bodyClass = 'conditions-page' //- Классы для body
+
+block content
+
+block main
+  main.main
+
+  //- Блок с подключением js файлов (при необходимости переопределяется)
+block scripts

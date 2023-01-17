@@ -8,6 +8,9 @@ function setHeaderPageTitle() {
   } else if(pageTitle.classList.contains('price-page')) {
     console.log('Загружена страницы Прайс')
     document.querySelector('.header__page-title').innerHTML = 'Прайс';
+  } else if(pageTitle.classList.contains('conditions-page')) {
+    console.log('Загружена страницы Условия проведени съёмки')
+    document.querySelector('.header__page-title').innerHTML = 'Условия проведения съёмки';
   }
 }
 
