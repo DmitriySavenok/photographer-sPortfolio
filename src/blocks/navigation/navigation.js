@@ -32,12 +32,15 @@ function navigationFilter() {
           // Поиск фотографий по нажатой кнопке.
           document.querySelectorAll('.gallery-photo').forEach(el => {
             if (filter === '*') {
+              document.querySelector('.header__page-title').innerHTML = 'Портфолио';
               el.dataset.fancybox = 'gallery';
             } else if (filter === '.vertical') {
+              document.querySelector('.header__page-title').innerHTML = 'Вертикальные';
               document.querySelectorAll('.vert').forEach(vert => {
                 vert.dataset.fancybox = 'vertical';
               })
             } else if (filter === '.horizontal') {
+              document.querySelector('.header__page-title').innerHTML = 'Горизонтальные';
               document.querySelectorAll('.horiz').forEach(horz => {
                 horz.dataset.fancybox = 'horizontal';
               })
