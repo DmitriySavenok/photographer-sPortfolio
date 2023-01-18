@@ -37,7 +37,6 @@
 
   &__photo-block {
     grid-row: 1 / 4;
-    background-image: url("../img/photo/portrait2.jpg");
     background-position: center;
     background-size: cover;
   }
@@ -82,6 +81,22 @@
     font-weight: 300;
     font-size: 24px;
   }
+}
+
+.portrait-shooting {
+  background-image: url("../img/photo/portrait2.jpg");
+}
+
+.love-story-shooting {
+  background-image: url("../img/photo/portrait1.jpg");
+}
+
+.family-shooting {
+  background-image: url("../img/photo/portrait4.jpg");
+}
+
+.christening-shooting {
+  background-image: url("../img/photo/portrait6.jpg");
 }
 
 @media (max-width: $laptop) {
