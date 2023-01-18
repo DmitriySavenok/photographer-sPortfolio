@@ -1,51 +1,27 @@
 section.portfolio(data-simplebar)
   .container-custom
     .portfolio__grid
-      .portfolio__item
-        img(src="img/photo/portrait1.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait2.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait3.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait4.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait5.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait6.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait1.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait2.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait3.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait4.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait5.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait6.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait1.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait2.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait3.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait4.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait5.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait6.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait1.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait2.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait3.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait4.jpg", alt="").grid-item.vertical
-      .portfolio__item
-        img(src="img/photo/portrait5.jpg", alt="").grid-item.horizontal
-      .portfolio__item
-        img(src="img/photo/portrait6.jpg", alt="").grid-item.vertical
+
+        a(href="img/photo/portrait1.jpg" data-fancybox="").gallery-photo.portfolio__item.family-img
+          //- img(src="img/photo/portrait1.jpg", loading="lazy", alt="").grid-item.vertical
+          <picture>
+            //- <source srcset="img/photo/gallery_x1/x1-avif/1.avif, img/photo/gallery_x2/x2-avif/1-x2.avif 2x" type="image/avif">
+            //- <source srcset="img/photo/gallery_x1/x1-webp/1.webp, img/photo/gallery_x2/x2-webp/1-x2.webp 2x" type="image/webp">
+            //- <source srcset="img/photo/gallery_x1/1.jpg, img/photo/gallery_x2/1.jpg 2x" type="image/jpg">
+            <img loading="lazy" width="257" height="172" class="grid-item family" src="img/photo/portrait1.jpg" alt="Фото из галереии">
+          </picture>
+
+        a(href="img/photo/portrait2.jpg" data-fancybox="").gallery-photo.portfolio__item.portrait-img
+          img(src="img/photo/portrait2.jpg", loading="lazy", alt="").grid-item.portrait
+
+        a(href="img/photo/portrait3.jpg" data-fancybox="").gallery-photo.portfolio__item.love-story-img
+          img(src="img/photo/portrait3.jpg", loading="lazy", alt="").grid-item.love-story
+
+        a(href="img/photo/portrait4.jpg" data-fancybox="").gallery-photo.portfolio__item.love-story-img
+          img(src="img/photo/portrait4.jpg", loading="lazy", alt="").grid-item.love-story
+
+        a(href="img/photo/portrait5.jpg" data-fancybox="").gallery-photo.portfolio__item.christening-img
+          img(src="img/photo/portrait5.jpg", loading="lazy", alt="").grid-item.christening
+
+        a(href="img/photo/portrait6.jpg" data-fancybox="").gallery-photo.portfolio__item.christening-img
+          img(src="img/photo/portrait6.jpg", loading="lazy", alt="").grid-item.christening

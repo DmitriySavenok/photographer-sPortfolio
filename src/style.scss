@@ -3,6 +3,16 @@
 @import "blocks/header/header";
 @import "blocks/navigation/navigation";
 @import "blocks/portfolio/portfolio";
+@import "blocks/conditions/conditions";
+@import "blocks/price/price";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
 
 /* stylelint-disable */
 *,
@@ -43,6 +53,16 @@ body {
   width: calc(100% - 342px);
   margin-left: 342px;
   transition: all ease $duration-normal;
+}
+
+@media (max-width: 768px) {
+  .main--navigation-opened {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+  }
 }
 
 p {
@@ -91,13 +111,6 @@ img[draggable="false"] {
 fieldset {
 	margin: 0;
 	border: 0;
-	padding: 0;
-}
-
-ul,
-li {
-	list-style: none;
-	margin: 0;
 	padding: 0;
 }
 

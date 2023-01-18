@@ -1,6 +1,7 @@
 .portfolio {
   height: calc(100vh - 43px);
   padding-top: 20px;
+  overflow-x: hidden;
   background-color: $background-color-light;
 }
 
@@ -8,4 +9,28 @@
   width: 20%;
   height: auto;
   padding: 5px;
+}
+
+.main--navigation-opened .grid-item {
+  width: 25%;
+}
+
+@media (max-width: 920px) {
+  .grid-item {
+    width: 25%;
+  }
+
+  .main--navigation-opened .grid-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: 50%;
+  }
+
+  .main--navigation-opened .grid-item {
+    width: 50%;
+  }
 }

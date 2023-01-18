@@ -10,8 +10,8 @@ window.onload = function() {
     navigationToggle();
     navigationFilter();
     setHeaderPageTitle();
+    setCurrentYear();
 
 	}, 200)
-
 
 }

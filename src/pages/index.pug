@@ -5,11 +5,17 @@ block vars
   - var headTitle  = 'Анастасия Конор | Портфолио'; //- Title
   - var bodyClass = 'index-page' //- Классы для body
 
+block style
+  link(rel="stylesheet", href="css/fancybox.min.css")
+
 block content
 
 block main
   main.main
+    h1.visually-hidden Анастасия Конор портфолио
     include ../blocks/portfolio/portfolio
 
   //- Блок с подключением js файлов (при необходимости переопределяется)
 block scripts
+  script(src="js/fancybox.min.js")
+  script(src="js/portfolio.min.js")
