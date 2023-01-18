@@ -112,3 +112,8 @@ function navigationFilter() {
       });
   }
 }
+
+function setCurrentYear() {
+  let year = String(new Date().getFullYear());
+  document.querySelector('.current-year').innerHTML = year;
+}

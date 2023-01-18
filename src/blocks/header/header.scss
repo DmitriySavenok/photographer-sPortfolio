@@ -175,3 +175,19 @@
     display: none;
   }
 }
+
+@media (max-width: $mobile) {
+  .header__grid {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .header__social-icons-block {
+    position: static;
+  }
+
+  .header__button-block {
+    transform: rotate(180deg);
+  }
+}
