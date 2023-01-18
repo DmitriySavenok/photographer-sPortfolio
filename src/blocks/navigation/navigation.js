@@ -3,6 +3,7 @@ function navigationFilter() {
   let filterFocus = localStorage.getItem('filterFocus');
   console.log('Локальная перемнная хранит ' + filterFocus);
 
+  // Если в локальной переменной ничего не записано или она не создана, то создать локальную переменную.
   if (filterFocus === undefined || filterFocus === null) {
     localStorage.setItem('filterFocus', '#button-all');
     clickButton = localStorage.getItem('filterFocus');
@@ -34,15 +35,26 @@ function navigationFilter() {
             if (filter === '*') {
               document.querySelector('.header__page-title').innerHTML = 'Портфолио';
               el.dataset.fancybox = 'gallery';
-            } else if (filter === '.vertical') {
-              document.querySelector('.header__page-title').innerHTML = 'Вертикальные';
-              document.querySelectorAll('.vert').forEach(vert => {
-                vert.dataset.fancybox = 'vertical';
+            } else if (filter === '.portrait') {
+              document.querySelector('.header__page-title').innerHTML = 'Индивидуальные съёмки';
+              document.querySelectorAll('.portrait-img').forEach(portrait => {
+                portrait.dataset.fancybox = 'portrait';
               })
-            } else if (filter === '.horizontal') {
-              document.querySelector('.header__page-title').innerHTML = 'Горизонтальные';
-              document.querySelectorAll('.horiz').forEach(horz => {
-                horz.dataset.fancybox = 'horizontal';
+            } else if (filter === '.family') {
+              document.querySelector('.header__page-title').innerHTML = 'Семейные съёмки';
+              document.querySelectorAll('.family-img').forEach(family => {
+                family.dataset.fancybox = 'family';
+              })
+            } else if (filter === '.love-story') {
+              document.querySelector('.header__page-title').innerHTML = 'Love Story';
+              document.querySelectorAll('.love-story-img').forEach(love => {
+                love.dataset.fancybox = 'love-story';
+              })
+            }
+            else if (filter === '.christening') {
+              document.querySelector('.header__page-title').innerHTML = 'Крещения';
+              document.querySelectorAll('.christening-img').forEach(christening => {
+                christening.dataset.fancybox = 'christening';
               })
             }
           })

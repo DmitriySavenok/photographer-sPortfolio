@@ -4,6 +4,7 @@
 @import "blocks/navigation/navigation";
 @import "blocks/portfolio/portfolio";
 @import "blocks/conditions/conditions";
+@import "blocks/price/price";
 
 .visually-hidden {
   position: absolute;
@@ -52,6 +53,13 @@ body {
   width: calc(100% - 342px);
   margin-left: 342px;
   transition: all ease $duration-normal;
+}
+
+@media (max-width: 920px) {
+  .main--navigation-opened {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+  }
 }
 
 p {
